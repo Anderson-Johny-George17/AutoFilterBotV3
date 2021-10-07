@@ -109,7 +109,7 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_photo(
+        await bot.reply_photo(
 
             photo="https://telegra.ph/file/f19a2f0d4891d9084c73d.jpg",
 
