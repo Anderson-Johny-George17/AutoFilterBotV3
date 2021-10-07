@@ -109,12 +109,18 @@ async def start(bot, message):
             )
         )
     else:
-        
+        await bot.send_photo(
+        chat_id=update.chat.id,
+        photo="https://telegra.ph/file/f19a2f0d4891d9084c73d.jpg",
+        caption=Translation.START_TEXT.format(
+                update.from_user.first_name),
+        reply_markup=reply_markup,
+        parse_mode="html",
 
             photo="https://telegra.ph/file/f19a2f0d4891d9084c73d.jpg",
 
-            caption=START_MSG,
-            parse_mode="Markdown",
+            
+     
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
